@@ -1,0 +1,11 @@
+[package]
+name = "idris_call"
+version = "0.1.0"
+authors = ["wires <jelle@defekt.nl>"]
+
+[lib]
+name = "idris_call"
+crate-type = ["dylib"]
+
+[dependencies]
+libc = "~0.2"
