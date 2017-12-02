@@ -5,7 +5,7 @@ authors = ["wires <jelle@defekt.nl>"]
 
 [lib]
 name = "idris_call"
-crate-type = ["dylib"]
+crate-type = ["dylib", "rlib"]
 
 [dependencies]
-libc = "~0.2"
+libc = { version = "0.2", default-features = false }

@@ -45,6 +45,14 @@ main = do x <- foo "424242" "42"
           putStrLn ("count_substrings '424242' '42' := " ++ show x)
 ```
 
+### Building using Nix
+
+Install the nix package manager, then
+	
+	nix-shell --run "cargo build"
+	nix-shell --run "cd idris_ffi && make"
+
+
 #### references
 
 - [idris 1.0 ffi](http://docs.idris-lang.org/en/latest/reference/ffi.html)
